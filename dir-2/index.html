@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Directives 2</title>
+
+  <link rel="stylesheet" href="test.css" />
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+
+  <dir-one></dir-one>
+  <hr>
+  <h1>{{product1.name}}</h1>
+  <dir-two name="{{product1.name}}" price="{{product1.price}}"></dir-two>
+  <hr>
+  <dir-three theproduct="product1"></dir-three>
+  <hr>
+  <dir-four></dir-four>
+  <hr>
+  <dir-four></dir-four>
+  <hr>
+  <dir-four></dir-four>
+</body>
+
+</html>
